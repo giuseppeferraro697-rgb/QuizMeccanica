@@ -28,7 +28,7 @@
 export const DATA = [
 
   // ═══════════════════════════════════════════════════════════════
-  // FM1 — Accoppiamenti cinematici e meccanismi piani  (5 domande)
+  // FM1 — Analisi Strutturale (Gradi di libertà, Accoppiamenti, Gruppi di Assur)
   // ═══════════════════════════════════════════════════════════════
   {
     code: "FM1",
@@ -36,7 +36,7 @@ export const DATA = [
     q: [
       // FM1 #1
       {
-        s: "Quale delle seguenti affermazioni relative agli accoppiamenti cinematici è errata?",
+        s: "Dato il meccanismo mostrato in figura, calcolarne mediante l'equazione di Grübler il numero di gradi di libertà (n), indicando esplicitamente il numero di membri (m), incluso il telaio ed eventuali membri degeneri, ed il numero dicoppie di classe 1 (C)",
         o: [
           "La classe di un accoppiamento cinematico rappresenta il numero di gradi di libertà del moto relativo impediti", // 0  ← corretta
           "Negli accoppiamenti cinematici superiori il contatto tra le superfici coniugate è lineare o puntiforme", // 1
