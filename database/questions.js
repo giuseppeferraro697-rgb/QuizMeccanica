@@ -37,7 +37,7 @@ export const DATA = [
       // FM1 #1
          {
         s: "Dato il meccanismo mostrato in figura, calcolarne mediante l'equazione di Grübler il numero di gradi di libertà (n), indicando esplicitamente il numero di membri (m), incluso il telaio ed eventuali membri degeneri, ed il numero di coppie di classe 1 (C).",
-        img: "/images/grubler_es1.jpg", 
+        img: "./images/grubler_es1.jpeg", 
         type: "multi-slot",
         slots: [
           { 
