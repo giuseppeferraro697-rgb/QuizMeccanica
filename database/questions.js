@@ -35,16 +35,27 @@ export const DATA = [
     title: "Accoppiamenti cinematici e meccanismi piani",
     q: [
       // FM1 #1
-      {
-        s: "Dato il meccanismo mostrato in figura, calcolarne mediante l'equazione di Grübler il numero di gradi di libertà (n), indicando esplicitamente il numero di membri (m), incluso il telaio ed eventuali membri degeneri, ed il numero dicoppie di classe 1 (C)",
-        o: [
-          "La classe di un accoppiamento cinematico rappresenta il numero di gradi di libertà del moto relativo impediti", // 0  ← corretta
-          "Negli accoppiamenti cinematici superiori il contatto tra le superfici coniugate è lineare o puntiforme", // 1
-          "Gli accoppiamenti cinematici possono essere realizzati mediante accoppiamento di forma o accoppiamento di forza", // 2
-          "Scegliere questa risposta se si ritiene che tutte le affermazioni proposte siano corrette", // 3
-          "In assenza di fenomeni di attrito, negli accoppiamenti cinematici le forze vengono scambiate nelle direzioni del moto relativo lungo le quali il movimento è impedito", // 4
-        ],
-        a: 0,
+         {
+        s: "Dato il meccanismo mostrato in figura, calcolarne mediante l'equazione di Grübler il numero di gradi di libertà (n), indicando esplicitamente il numero di membri (m), incluso il telaio ed eventuali membri degeneri, ed il numero di coppie di classe 1 (C).",
+        img: "./images/grubler_es1.jpg", 
+        type: "multi-slot",
+        slots: [
+          { 
+            label: "n =", 
+            o: ["0", "1", "2", "3"], 
+            a: 3 // L'indice 1 corrisponde al valore "1"
+          },
+          { 
+            label: "m =", 
+            o: ["3", "4", "5", "6"], 
+            a: 3 // L'indice 1 corrisponde al valore "4"
+          },
+          { 
+            label: "C =", 
+            o: ["3", "4", "5", "6"], 
+            a: 3 // L'indice 2 corrisponde al valore "5"
+          }
+        ]
       },
       // FM1 #2
       {
